@@ -61,10 +61,9 @@ react-snake-game/
 │
 └── 📁 utils/ (Game Logic & Utilities)
 ├── game.ts # Core game configuration & collision logic
-├── game.test.ts # Game logic tests
 └── elements/ (Canvas Drawing Functions)
 ├── board.ts # Game board drawing & canvas utilities
-├── board.test.ts # Board drawing tests
+├── updateGamestate.ts # Handles the in-game updates and calculations
 ├── snake.ts # Snake rendering function
 └── food.ts # Food generation & rendering
 ```
