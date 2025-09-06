@@ -95,3 +95,16 @@ This project uses `vitest` + `react-testing-library`. Run the tests with:
 ```
 npm run test
 ```
+
+## How to play
+
+After running the project, use the <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> arrow keys to control the snake.
+
+## Available configuration:
+
+- **Speed**: How fast the snake moves in milliseconds per step. (Default: `200`)
+- **Snake size**: The initial number of segments in the snake. (Default: `5`)
+- **Block size**: The size (in pixels) of each grid square. (Default: `20`)
+- **Snake start position**: The starting x and y coordinates of the snake's head. (Default: `{ x: 100, y: 100 }`)
+- **Score to win**: The score required to win the game. (Default: `30`)
+- **Score per food**: The number of points gained for each food eaten. (Default: `3`)
