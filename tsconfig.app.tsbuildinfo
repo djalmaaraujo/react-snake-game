@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/types.ts","./src/vite-env.d.ts","./src/components/youlose.tsx","./src/components/youwin.tsx","./src/hooks/usecanvas.ts","./src/hooks/usekeypress.ts","./src/utils/game.ts","./src/utils/updategamestate.ts","./src/utils/elements/board.ts","./src/utils/elements/food.ts","./src/utils/elements/snake.ts"],"version":"5.8.3"}
