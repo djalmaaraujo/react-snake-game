@@ -6,6 +6,10 @@ This is an experiment project that combines React, TypeScript and TailwindCSS.
 <img width="512" alt="SCR-20250906-rhkx" src="https://github.com/user-attachments/assets/424a21e3-d95d-4dc4-acf6-3ab31aac4c2d" />
 <img width="512" alt="SCR-20250906-rhjn" src="https://github.com/user-attachments/assets/b1c182fb-d1d7-448e-af94-54ab6eda93c0" />
 
+## Live Demo
+
+Go to: [https://react-snake-game-sigma.vercel.app/](https://react-snake-game-sigma.vercel.app/)
+
 ## Essential to have in this project
 
 - React 18 or later.
