@@ -2,13 +2,13 @@
 
 This is an experiment project that combines React, TypeScript and TailwindCSS.
 
-## Essential do have in this project
+## Essential to have in this project
 
 - React 18 or later.
 - Functional components and hooks.
-- Unit tests
+- Unit tests.
 - Keyboard controls.
-- No usage of A.I
+- No usage of A.I.
 
 ## Nice‑to‑Have
 
@@ -33,6 +33,7 @@ This is an experiment project that combines React, TypeScript and TailwindCSS.
 
 ## Files and Folders
 
+```
 react-snake-game/
 ├── 📄 Documentation & Assets
 │ ├── README.md # Project documentation & game rules
@@ -62,6 +63,7 @@ react-snake-game/
 ├── board.test.ts # Board drawing tests
 ├── snake.ts # Snake rendering function
 └── food.ts # Food generation & rendering
+```
 
 ## General decisions
 
@@ -69,11 +71,11 @@ react-snake-game/
 
 - Using canvas for the snake game was a better choice due to its superior performance for real-time rendering. Unlike regular React components, which trigger re-renders for every change in state, canvas allows direct, low-level manipulation of pixels. This avoids the overhead of the React reconciliation process, making it ideal for games where frequent updates are necessary for smooth animation.
 
-### Collisiosn
+### Collisions
 
 - _Wall Collision_: Checks if snake head moves outside the 20x20 grid boundaries (x < 0, x ≥ 400, y < 0, or y ≥ 400 pixels). Result: Game ends with "lose" state immediately.
 - _Self Collision_: Checks if snake head overlaps any body segment by comparing head coordinates (x,y) with all body segment positions. Result: Game ends with "lose" state after the collision occurs.
-- _Food Collision (eat)_: Checks if snake head position exactly matches food position (x === food.x && y === food.y). Result: Score increases by 20 points, snake grows by 1 segment (keeps old tail), new food spawns randomly, and game ends with "win" if score reaches 30 points. The collision system uses a priority order: wall collision is checked first, then food consumption, then self-collision is checked on the resulting snake state. This ensures proper game flow and prevents edge cases.
+- _Food Collision (eat)_: Checks if snake head position exactly matches food position (x === food.x && y === food.y). Result: Score increases by 3 points, snake grows by 1 segment (keeps old tail), new food spawns randomly, and game ends with "win" if score reaches 30 points. The collision system uses a priority order: wall collision is checked first, then food consumption, then self-collision is checked on the resulting snake state. This ensures proper game flow and prevents edge cases.
 
 ## Hooks explanation
 
@@ -84,9 +86,9 @@ react-snake-game/
 ## How to Run
 
 - Clone the repository
-- cd `snake-game`
+- cd `react-snake-game`
 - Install dependencies: `npm install`
-- Run the development server: `npm run test`
+- Run the development server: `npm run dev`
 
 ## How to run the tests
 
@@ -108,3 +110,5 @@ After running the project, use the <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> 
 - **Snake start position**: The starting x and y coordinates of the snake's head. (Default: `{ x: 100, y: 100 }`)
 - **Score to win**: The score required to win the game. (Default: `30`)
 - **Score per food**: The number of points gained for each food eaten. (Default: `3`)
+
+You can change the configuration in `src/utils/game.ts`.
