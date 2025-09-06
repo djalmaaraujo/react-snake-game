@@ -1,4 +1,4 @@
-# Snake Game | React + TypeScript + tailwindcss
+# Snake Game | React + TypeScript + Tailwind CSS
 
 This is an experiment project that combines React, TypeScript and TailwindCSS.
 
